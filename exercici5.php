@@ -31,4 +31,4 @@ echo "Valores sumados = $superior<br><br>";
 echo "4. Muestra el total de números pares e impares generados.<br><br>";
 
 echo "El total de números pares es: $contadorPares<br>";
-echo "El total de números pares es: $contadorImpares<br><br>";
+echo "El total de números pares es: $contadorImpare";
