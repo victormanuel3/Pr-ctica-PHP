@@ -9,16 +9,16 @@ echo "El valor del dado es: $aleatorio<br>";
 echo "<br>2. Muestra en números y letras el valor obtenido y valor que tendrá el dado en la cara opuesta. (1:5, 2:6, 3:4)<br><br>";
 
 switch ($aleatorio) {
-    case 1: "uno <br> Su cara opuesta es 5";
+    case 1: echo "Uno <br> Su cara opuesta es 5";
         break;
-    case 2: "dos <br> Su cara opuesta es 6";
+    case 2: echo "Dos <br> Su cara opuesta es 6";
         break;
-    case 3: "tres <br> Su cara opuesta es 4";
+    case 3: echo "Tres <br> Su cara opuesta es 4";
         break;
-    case 4: "cuatro <br> Su cara opuesta es 3";
+    case 4: echo "Cuatro <br> Su cara opuesta es 3";
         break;
-    case 5: "cinco <br> Su cara opuesta es 1";
+    case 5: echo "Cinco <br> Su cara opuesta es 1";
         break;
-    case 6: "seis <br> Su cara opuesta es 2";
+    case 6: echo "Seis <br> Su cara opuesta es 2";
         break;
 }

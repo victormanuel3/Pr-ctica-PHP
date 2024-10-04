@@ -5,18 +5,18 @@ c) Se debe controlar que no se pueden quitar mas unidades de las que haya, en es
 caso mostrar error */
 session_start();
 
-if (!isset($_SESSION["quantity_milk"])) {
+if (!isset($_SESSION["quantity_milk"])) { //Si no existe una cantidad de milk lo iniciamos en 0. Para que no siempre sea 0.
     $_SESSION["quantity_milk"] = 0;
 }
-if (!isset($_SESSION["quantity_softdrink"])) {
+if (!isset($_SESSION["quantity_softdrink"])) { //Si no existe una cantidad de soft drink lo iniciamos en 0. Para que no siempre sea 0.
     $_SESSION["quantity_softdrink"] = 0;
 }
 // ---------------------------------------------------------------------------------------------
 
-if (!isset($_SESSION["name"])) {
-    $_SESSION["name"] = ''; // Inicializamos la variable SESSION si no existe
-} else if (isset($_POST["name"]) && $_POST["name"] !== '') {
-    $_SESSION["name"] = $_POST["name"]; // Cambiamos el valor d ela variable a lo añadido en el post
+if (!isset($_SESSION["name"])) { // Si no existe un name.
+    $_SESSION["name"] = ''; // Dejamos el campo vacío.
+} else if (isset($_POST["name"]) && $_POST["name"] !== '') { //En caso de que se haya enviado un valor diferente a uno vacío
+    $_SESSION["name"] = $_POST["name"]; //SESSION name cambia a ese valor y se mantiene
 }
 
 // =============================================================================================
@@ -67,7 +67,7 @@ if (isset($_POST["add"])) {
             <option value="soft_drink">Soft drink</option>
         </select>
         <h2>Product quantity:</h2>
-        <input type="number" name="quantity">
+        <input type="number" name="quantity" required>
         <br><br>
         <input type="submit" name="add" value="add">
         <input type="submit" name="remove" value="remove">

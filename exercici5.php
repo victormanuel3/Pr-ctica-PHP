@@ -23,7 +23,7 @@ while ($superior <= 100) {
 }
 
 //3. Muestra la suma de los valores generados.
-echo "<br><br>3. Muestra la suma de los valores generados.<br><br>";
+echo "<br>3. Muestra la suma de los valores generados.<br><br>";
 
 echo "Valores sumados = $superior<br><br>";
 
@@ -31,4 +31,4 @@ echo "Valores sumados = $superior<br><br>";
 echo "4. Muestra el total de números pares e impares generados.<br><br>";
 
 echo "El total de números pares es: $contadorPares<br>";
-echo "El total de números pares es: $contadorImpare";
+echo "El total de números impares es: $contadorImpares";
