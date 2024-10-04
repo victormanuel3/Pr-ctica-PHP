@@ -2,7 +2,7 @@
 //1) Crea un array asociaƟvo con los siguientes datos y claves. 
 //nombre: Sara, apellido: Martínez, edad: 23, ciudad: Barcelona.
 //Muestra los valores del array anterior uƟlizando foreach.
-echo "1) Crea un array asociaƟvo con los siguientes datos y claves. nombre: Sara, apellido: Martínez, edad: 23, ciudad: Barcelona. Muestra los valores del array anterior uƟlizando foreach.<br><br>";
+echo "1) Crea un array asociativo con los siguientes datos y claves. nombre: Sara, apellido: Martínez, edad: 23, ciudad: Barcelona. Muestra los valores del array anterior uƟlizando foreach.<br><br>";
 
 $array = array("nombre" => "Sara", "apellido" => "Martínez", "edad" => "23", "ciudad" => "Barcelona");
 
@@ -12,7 +12,7 @@ foreach ($array as $y) {
 }
 
 //2) Muestra los valores del array del ejercicio 1 mostrando la clave y el valor utilizando foreach. 
-echo "//<br><br>2) Muestra los valores del array del ejercicio 1 mostrando la clave y el valor utilizando foreach.<br><br>";
+echo "<br>2) Muestra los valores del array del ejercicio 1 mostrando la clave y el valor utilizando foreach.<br><br>";
 
 foreach ($array as $x => $y) {
     echo "$x: $y<br>";
