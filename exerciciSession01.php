@@ -39,8 +39,8 @@ if (isset($_POST["add"])) {
                 $_SESSION["quantity_milk"] = 'Error, no puedes quitar menos unidades de las posibles.';
             }
             // -------------------------------------------------------------------
-        }else if (isset($_POST["product"]) && $_POST["product"] == 'soft drink') {
-            $_SESSION['quantity_milk'] -= $_POST['quantity'];
+        }else if (isset($_POST["product"]) && $_POST["product"] == 'soft_drink') {
+            $_SESSION['quantity_softdrink'] -= $_POST['quantity'];
 
             if ($_SESSION["quantity_softdrink"] < 0) {
                 $_SESSION["quantity_softdrink"] = 'Error, no puedes quitar menos unidades de las posibles.';
